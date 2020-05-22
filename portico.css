@@ -1173,12 +1173,14 @@ a {
   text-align: center;
   font-size: 1.2em;
   font-weight: 600;
-  margin-top: 6px;
+  margin-top: 15px;
+  text-transform: uppercase;
 }
 .whyUsTitle{
   font-family: cool;
   font-size: 4em;
   padding: 50px;
   text-align: center;
+  text-transform: uppercase;
   color: rgba(101, 9, 21, 0.7215686274509804);
 }
