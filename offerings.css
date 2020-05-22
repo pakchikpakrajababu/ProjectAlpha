@@ -528,7 +528,8 @@ section {
 }
 
 .services>li>ul li {
-	margin-bottom: 10px
+	margin-bottom: 10px;
+	display: flex;
 }
 
 .services>li:last-child,
@@ -1496,7 +1497,7 @@ table a,
 	}
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:960px) {
 	.imgl,
 	.imgr {
 		display: inline-block;
@@ -1523,7 +1524,7 @@ table a,
 		display: block;
 		float: none;
 		width: auto;
-		margin: 0 0 30px 0;
+		margin: 0 0 115px 0;
 		padding: 0
 	}
 	#header {
@@ -1583,3 +1584,27 @@ table a,
     width: 17%
 }
 
+@media screen and (max-width: 960px) {
+
+	.addflex{
+		flex:1;
+		width: unset;
+		text-align: center;
+	}
+	.one_quarter .nospace i {
+		display: none;
+	}
+	.one_quarter h6 {
+		color : #CF9C67;
+	}
+	.services>li>ul li {
+		justify-content: center;
+	}
+	.services+footer{
+		text-align: center;
+	}
+	.row3 {
+		text-align: center;
+	}
+}
+	
