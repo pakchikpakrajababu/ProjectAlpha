@@ -21,6 +21,7 @@
     font-size: 3em;
     padding: 100px 40px 15px 40px;
     color: rgba(101, 9, 21, 0.7215686274509804);
+    text-transform: uppercase;
 }
 .footer {
     position: relative;
@@ -69,7 +70,8 @@
     color:#222;;
 }
 .country-title{
-    font-size: 0.9em;    
+    font-size: 0.9em;
+
 }
 .address-sep{
     margin-top: 20px;
@@ -84,6 +86,7 @@
 .address-title{
     font-size: 1.3em;
     color: #1a313e;
+    text-transform: uppercase;
 
 }
 

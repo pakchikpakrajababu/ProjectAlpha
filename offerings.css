@@ -520,7 +520,8 @@ section {
 }
 
 .sectiontitle * {
-	margin: 0
+	margin: 0;
+	font-size:4em;
 }
 
 .services {
@@ -1178,7 +1179,7 @@ body {
 }
 
 a {
-	color: #CF9C67
+	color: #0a8182
 }
 
 a:active,
@@ -1199,7 +1200,7 @@ label span {
 input:focus,
 textarea:focus,
 *:required:focus {
-	border-color: #CF9C67
+	border-color: #0a8182
 }
 
 .overlay {
@@ -1219,8 +1220,8 @@ textarea:focus,
 .btn,
 .btn.inverse:hover {
 	color: #FFF;
-	background-color: #CF9C67;
-	border-color: #CF9C67
+	background-color: #0a8182;
+	border-color: #0a8182
 }
 
 .btn:hover,
@@ -1276,7 +1277,7 @@ textarea:focus,
 }
 
 #topbar ul li:first-child a {
-	color: #CF9C67
+	color: #0a8182
 }
 
 #header #logo a {
@@ -1304,7 +1305,11 @@ textarea:focus,
 
 .services a:hover,
 .services>li>ul li i {
-	color: #CF9C67
+	color: #0a8182;
+}
+
+.services a:hover{
+    color: #FFF
 }
 
 .cta input {
@@ -1318,12 +1323,12 @@ textarea:focus,
 }
 
 .cta input:focus {
-	border-color: #CF9C67
+	border-color: #0a8182
 }
 
 .cta button {
 	color: #FFF;
-	background-color: #CF9C67
+	background-color: #0a8182
 }
 
 .cta input[type="text"][placeholder] {
@@ -1361,7 +1366,7 @@ textarea:focus,
 #mainav .active a,
 #mainav a:hover,
 #mainav li:hover>a {
-	color: #CF9C67;
+	color: #0a8182;
 	background-color: inherit
 }
 
@@ -1375,7 +1380,7 @@ textarea:focus,
 #mainav li li:hover>a,
 #mainav .active .active>a {
 	color: #FFF;
-	background-color: #CF9C67
+	background-color: #0a8182
 }
 
 #mainav form select {
@@ -1389,7 +1394,7 @@ textarea:focus,
 }
 
 #breadcrumb li:last-child a {
-	color: #CF9C67
+	color: #0a8182
 }
 
 .container .sidebar nav a {
@@ -1398,7 +1403,7 @@ textarea:focus,
 }
 
 .container .sidebar nav a:hover {
-	color: #CF9C67
+	color: #0a8182
 }
 
 .pagination a,
@@ -1408,12 +1413,12 @@ textarea:focus,
 
 .pagination .current * {
 	color: #FFF;
-	background-color: #CF9C67
+	background-color: #0a8182
 }
 
 #backtotop {
 	color: #FFF;
-	background-color: #CF9C67
+	background-color: #0a8182
 }
 
 table,
@@ -1428,7 +1433,7 @@ td,
 #comments input:focus,
 #comments textarea:focus,
 #comments *:required:focus {
-	border-color: #CF9C67
+	border-color: #0a8182
 }
 
 th {
@@ -1595,7 +1600,7 @@ table a,
 		display: none;
 	}
 	.one_quarter h6 {
-		color : #CF9C67;
+		color : #0a8182;
 	}
 	.services>li>ul li {
 		justify-content: center;
