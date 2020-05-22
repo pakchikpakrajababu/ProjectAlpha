@@ -47,6 +47,10 @@
 .circular_div{
     background: none;
 }
+
+.small-icon{
+   font-size: 0.9em;
+}
 .contact-email{
     margin-top: 20px;
 }
