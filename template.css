@@ -234,13 +234,13 @@ li:hover i {
 
 }
 .leftDiv {
-    background: url(./discussion.jpg);
+    background: url('images/pages/solutions/analytics/analytics-01.jpg');
     background-size: cover;
     background-position: 0px 0px;
 }
 
 .other{
-    background: url(./handOnPaper.jpg);
+    background: url('images/pages/solutions/analytics/analytics-02.jpg');
     background-size: cover;
     background-position: 0px;
 }
@@ -276,7 +276,7 @@ li:hover i {
     margin-left:0;
 }
 .top-backg{
-    background: url("./topBg1.jpg");
+    background: url("images/pages/inner-page-common-bg.jpg");
     background-size: cover;
     background-attachment: fixed;
 }

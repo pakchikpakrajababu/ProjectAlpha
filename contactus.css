@@ -95,7 +95,7 @@
 }
 
 .body-main {
- background: url(map.jpg) no-repeat center center scroll;
+ background: url('images/pages/contactUs/contact-us-map-bg.jpg') no-repeat center center scroll;
   background-size: cover;
   /* height: 100%; */
   background-position-x: -30px;
