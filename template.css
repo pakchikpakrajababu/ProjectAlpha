@@ -64,8 +64,12 @@ li:hover i {
     height: 10em;
 } */
 .template_logo-container{
-    padding: 100px 40px 0px 40px;
+    padding: 72px 40px 0px 40px;
     text-align: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .template_logo-container img{
    height: 170px;
@@ -86,9 +90,10 @@ li:hover i {
 .contactusTitle{
     font-family: cool;
     font-size: 2em;
-    padding: 0px 40px 15px 40px;
+    padding: 30px 40px 15px 40px;
     color: rgba(101, 9, 21, 0.7215686274509804);
     text-align: center;
+    box-shadow: 0 -5px 6px -5px #a9a9a9;
 }
 
 .content-container{
@@ -269,7 +274,11 @@ li:hover i {
 .inverse .rightDiv {
     margin-left:0;
 }
-
+.top-backg{
+    background: url("./topBg1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
 /* .animatable {
   
   visibility: hidden;
@@ -417,6 +426,10 @@ li:hover i {
     }
     .content {
         padding: 0 40px 30px 42px;
+    }
+    .template_logo-container {
+        padding: 50px 40px 50px 40px;
+        text-align: center;
     }
 }
 @media screen and (min-width: 1080px) {
