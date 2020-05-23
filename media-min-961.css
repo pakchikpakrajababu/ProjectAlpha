@@ -424,4 +424,22 @@
     margin-top: 80px;
     margin-bottom: 36px;
   }
+  .top-menu-sub:hover  ul  {
+    position: absolute;
+    background: #fff;
+    width: 335px;
+    left: -25px;
+    list-style: none;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: auto;
+  }
+  .top-menu-sub:hover>.fa-angle-right {
+    transform: rotate(90deg);
+}
+.li:hover i {
+    font-size: 1em;
+    color: rgba(101, 9, 21, 0.7215686274509804);
+}
 }

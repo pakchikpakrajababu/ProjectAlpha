@@ -122,7 +122,7 @@ jQuery(function($) {
     });
   }); */
   /**********************  Smooth Scroll Ends  ***********************/
- /*  var counter = 0;
+  /*  var counter = 0;
   var maxSize = $(".progress-bar-sub").length;
   $(".progress-bar-sub").each(function() {
     var element = $(this);
@@ -149,19 +149,19 @@ jQuery(function($) {
   }); */
   /*******SCROLL TO TOP -- START ********/
   $(document).ready(function() {
-  $(window).on("scroll", doAnimations);
-  $(window).trigger("scroll");
-	$(this).scrollTop(0);
-  $(".title_logo").hide();
-  if ($(window).height() < 425) {
-    $(".header").addClass("height-adjuster");
-  }
+    $(window).on("scroll", doAnimations);
+    $(window).trigger("scroll");
+    $(this).scrollTop(0);
+    $(".title_logo").hide();
+    if ($(window).height() < 425) {
+      $(".header").addClass("height-adjuster");
+    }
     if (jQuery(window).width() < 960) {
       $(".fab-cont").slideDown("fast");
       $(".logo-container").hide();
       $(".head-main").hide();
       $(".title_logo").show();
-      $(".top-menu").addClass('animation');
+      $(".top-menu").addClass("animation");
     }
     $(window).scroll(function() {
       if ($(this).scrollTop() > 150) {
@@ -218,10 +218,10 @@ jQuery(function($) {
 /********************* MAPS API - END **********************************/
 $(window).resize(function() {
   if ($(window).width() < 960) {
-	$(".fab-cont").slideDown("fast");
-	$(".title_logo").show();
-	$(".head-main").hide();
-	$(".logo-container").hide();
+    $(".fab-cont").slideDown("fast");
+    $(".title_logo").show();
+    $(".head-main").hide();
+    $(".logo-container").hide();
   }
   if ($(window).height() < 425) {
     $(".header").addClass("height-adjuster");
@@ -229,38 +229,36 @@ $(window).resize(function() {
     $(".header").removeClass("height-adjuster");
   }
   if ($(window).width() > 960) {
-	$(".logo-container").show();
-	$(".fab-cont").slideUp("fast");
+    $(".logo-container").show();
+    $(".fab-cont").slideUp("fast");
     $(".head-main").show();
     $(".title_logo").hide();
   }
 });
 
-  // Function which adds the 'animated' class to any '.animatable' in view
-  var doAnimations = function() {
-    
-    // Calc current offset and get all animatables
-    var offset = $(window).scrollTop() + $(window).height(),
-        $animatables = $('.animatable');
-    
-    // Unbind scroll handler if we have no animatables
-    if ($animatables.length == 0) {
-      $(window).off('scroll', doAnimations);
+// Function which adds the 'animated' class to any '.animatable' in view
+var doAnimations = function() {
+  // Calc current offset and get all animatables
+  var offset = $(window).scrollTop() + $(window).height(),
+    $animatables = $(".animatable");
+
+  // Unbind scroll handler if we have no animatables
+  if ($animatables.length == 0) {
+    $(window).off("scroll", doAnimations);
+  }
+
+  // Check all animatables and animate them if necessary
+  $animatables.each(function(i) {
+    var $animatable = $(this);
+    if ($animatable.offset().top + $animatable.height() - 20 < offset) {
+      $animatable.removeClass("animatable").addClass("animated");
     }
-    
-    // Check all animatables and animate them if necessary
-		$animatables.each(function(i) {
-       var $animatable = $(this);
-			if (($animatable.offset().top + $animatable.height() - 20) < offset) {
-        $animatable.removeClass('animatable').addClass('animated');
-			}
-    });
+  });
+};
 
-	};
-  
-  // Hook doAnimations on scroll, and trigger a scroll
+// Hook doAnimations on scroll, and trigger a scroll
 
-function isTouchDevice (){
+function isTouchDevice() {
   var prefixes = ["", "-webkit-", "-moz-", "-o-", "-ms-", ""];
   var mq = query => window.matchMedia(query).matches;
 
@@ -271,14 +269,13 @@ function isTouchDevice (){
     return true;
   }
   return mq(["(", prefixes.join("touch-enabled),("), "heartz", ")"].join(""));
-};
-   
-if (isTouchDevice()) {
-  /*Execute code only on a touch screen device*/
+}
 
+if (isTouchDevice()) {
+console.log("ishere");
   /*Show #filter1 drop-down and hide #filter2 drop-down if it was open*/
   $("#solutions").bind("touchstart", function(e) {
-    if($("#resources ul").hasClass("show-submenu")){
+    if ($("#resources ul").hasClass("show-submenu")) {
       $("#resources ul").toggleClass("show-submenu");
       $("#resources li").toggleClass("show-submenu-li");
     }
@@ -292,8 +289,8 @@ if (isTouchDevice()) {
       $("#solutions ul").toggleClass("show-submenu");
       $("#solutions li").toggleClass("show-submenu-li");
     }
-      $("#resources ul").toggleClass("show-submenu");
-      $("#resources li").toggleClass("show-submenu-li");
+    $("#resources ul").toggleClass("show-submenu");
+    $("#resources li").toggleClass("show-submenu-li");
     /* $("#filter2 ul.children").css("display", "none"); */
     e.stopPropagation(); /*Make all touch events stop at the #filter1 container element*/
   });
@@ -318,4 +315,3 @@ if (isTouchDevice()) {
   //   ); /*Close filters drop-downs if user taps on any link in drop-down*/
   // });
 }
-

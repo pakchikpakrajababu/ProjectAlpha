@@ -624,10 +624,18 @@
     background: #fff !important;
     margin-top: -19px;
     padding-top: 0 !important;
+    height: auto !important
   }
-  /* .top-menu-sub ul {
+  .top-menu-sub ul {
     position: relative !important;
-  } */
+    /* width: 100%!important; */
+  }
+  .top-menu-sub li {
+    width: fit-content;
+    font-size: 13px;
+    margin-top: 15px;
+    /* width: 100%; */
+  }
   .show-submenu-li{
     width: 100% !important;
     margin-top: 30px !important;
