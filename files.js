@@ -3,7 +3,7 @@ var portfolio = angular.module("portfolio", []);
 portfolio.controller("portfolioController", [
   "$scope",
   function($scope) {
-    $(".fab-cont,.about,.top-menu-sub").click(function() {
+    $(".fab-cont,.about").click(function() {
       $("#one").toggleClass("expand1");
       $("#two").toggleClass("expand2");
       $("#three").toggleClass("expand3");

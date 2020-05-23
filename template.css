@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-.top-menu{
+/* .top-menu{
     background: #fff;
     border-bottom: 1px solid #c7c7c7;
 }
@@ -20,7 +20,6 @@
     left: -25px;
     list-style: none;
     
-    /* top: -165px; */
     top: 27px;
     height: 0;
     overflow: hidden;
@@ -56,7 +55,7 @@
 li:hover i {
     font-size: 1em;
     color: rgba(101, 9, 21, 0.7215686274509804);
-}
+} */
 .separator  {
     margin-top:100px;
 }
