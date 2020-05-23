@@ -97,6 +97,7 @@ li:hover i {
     padding: 0 40px 10px 40px;
     color: rgba(17,132,133,0.84);
     text-align: center;
+
 }
 .content{
     font-family: cool;
@@ -108,11 +109,11 @@ li:hover i {
     flex-direction: column;
     align-items: center;
     /* text-align: justify; */
+    justify-content: center;
 }
 
 .content p{
     margin-top: 15px;
-    width: 1080px;
 }
 
 .footer {
@@ -373,7 +374,6 @@ li:hover i {
     }
     .contactusTitle{
        font-size: 2.5em; 
-       padding: 15px 40px 15px 20px;
     }
     .separator {
         margin-top: 0px;
@@ -386,7 +386,42 @@ li:hover i {
     .contact-email {
         margin-top: 24px;
     }
-    /* .card-container {
-        margin-top: 5px;
-    } */
+    .content p {
+        width: 100%;
+        text-align: justify;
+    }
+    .parentDiv {
+        display: flex;
+        justify-content: center;
+        font-family: cool;
+        margin: 0px;
+        flex-direction: column;
+        min-height: 1205px;
+    }
+    .rightDiv {
+        flex: 1;
+        margin: 50px 5px 50px 15px;
+    }
+    .leftDiv {
+        box-shadow: none;
+        background-attachment: fixed;
+    }
+    .section-container {
+            margin-top: 30px;
+    }
+    .inverse .rightDiv {
+        margin: 50px 5px 50px 15px;
+    }
+    .inverse {
+        min-height: 700px;
+    }
+    .content {
+        padding: 0 40px 30px 42px;
+    }
+}
+@media screen and (min-width: 1080px) {
+    .content p{
+        width: 1080px;
+        text-align: justify;
+    }
 }
