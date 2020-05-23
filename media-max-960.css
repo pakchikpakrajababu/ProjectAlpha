@@ -616,24 +616,21 @@
   .height-adjuster {
       height: 150%;
   }
-  .top-menu-sub:hover ul {
+  .show-submenu {
     position: relative !important;
     text-align: center;
-    width: 100%;
-    left: 0;
-    background: #fff;
+    width: 100% !important;
+    left: 0 !important;
+    background: #fff !important;
     margin-top: -19px;
+    padding-top: 0 !important;
   }
-  .top-menu-sub ul {
+  /* .top-menu-sub ul {
     position: relative !important;
-    padding-top: 0;
-  }
-  .top-menu-sub:hover ul li {
-    width: 100%;
-    margin-top: 30px;
-  }
-  .top-menu-sub li {
+  } */
+  .show-submenu-li{
+    width: 100% !important;
+    margin-top: 30px !important;
     padding: 0;
-    width: 0;
   }
 }
