@@ -310,7 +310,6 @@
     position: absolute;
     left: 5px;
     -webkit-transition: all 400ms;
-    -o-transition: all 400ms;
     transition: all 400ms;
   }
 
@@ -326,7 +325,6 @@
     position: absolute;
     left: 4px;
     -webkit-transition: all 400ms;
-    -o-transition: all 400ms;
     transition: all 400ms;
   }
 
@@ -435,8 +433,13 @@
     padding-bottom: 15px;
     height: auto;
   }
+  .top-menu-sub  ul  {
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+  }
   .top-menu-sub:hover>.fa-angle-right {
-    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
 }
 .li:hover i {
     font-size: 1em;

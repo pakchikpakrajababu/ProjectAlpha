@@ -103,7 +103,6 @@ html {
 
 .head-main {
   -webkit-transition: all 300ms;
-  -o-transition: all 300ms;
   transition: all 300ms;
 }
 
@@ -193,7 +192,6 @@ html {
 .top-menu-sub {
   margin-left: 25px;
   -webkit-transition: all 300ms;
-  -o-transition: all 300ms;
   transition: all 300ms;
   border-bottom: 1px solid transparent;
   position: relative;
@@ -203,7 +201,6 @@ html {
 .about {
   margin-left: 30px;
   -webkit-transition: all 300ms;
-  -o-transition: all 300ms;
   transition: all 300ms;
   border-bottom: 1px solid transparent;
   position: relative;
@@ -514,7 +511,6 @@ education {
   height: 72px;
   width: 31px;
   -webkit-transform: rotate(24deg);
-  -ms-transform: rotate(24deg);
       transform: rotate(24deg);
 }
 
@@ -572,7 +568,6 @@ education {
   background-color: rgba(43, 42, 42, 0);
   color: #fff;
   -webkit-transition: all 300ms ease-in-out;
-  -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 
@@ -669,7 +664,6 @@ education {
   border-bottom: 1px solid #333;
   z-index: 5;
   -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
   transition: all 0.4s;
   cursor: pointer;
 }
@@ -787,7 +781,6 @@ a {
   right: 60px;
   bottom: 30px;
   -webkit-transition: all 300ms;
-  -o-transition: all 300ms;
   transition: all 300ms;
 }
 
@@ -802,7 +795,6 @@ a {
   background-color: white;
   z-index: 9997;
   -webkit-transition: all 0.7s ease;
-  -o-transition: all 0.7s ease;
   transition: all 0.7s ease;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -893,7 +885,6 @@ li:hover i {
   margin-top: -70.5px;
   margin-left: -35px;
   -webkit-transform: rotate(79deg);
-  -ms-transform: rotate(79deg);
       transform: rotate(79deg);
 }
 
@@ -929,7 +920,6 @@ li:hover i {
   height: 19px;
   left: -1px;
   -webkit-transform: skew(25deg, 10deg);
-  -ms-transform: skew(25deg, 10deg);
       transform: skew(25deg, 10deg);
   z-index: 100;
   top: 90px;
@@ -947,7 +937,6 @@ li:hover i {
   top: 12px;
   left: 11px;
   -webkit-transform: skew(-11deg, 47deg);
-  -ms-transform: skew(-11deg, 47deg);
       transform: skew(-11deg, 47deg);
 }
 
@@ -966,7 +955,6 @@ li:hover i {
   top: 43px;
   left: 0px;
   -webkit-transform: skew(-10deg, -22deg);
-  -ms-transform: skew(-10deg, -22deg);
       transform: skew(-10deg, -22deg);
 }
 
@@ -985,7 +973,6 @@ li:hover i {
   top: 86.5px;
   left: -7.4px;
   -webkit-transform: skew(-155deg, -80deg);
-  -ms-transform: skew(-155deg, -80deg);
       transform: skew(-155deg, -80deg);
 }
 
@@ -1200,7 +1187,6 @@ li:hover i {
   -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
           box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   -webkit-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  -o-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   /* border: 1px solid #eee; */
 }
@@ -1245,7 +1231,7 @@ li:hover i {
     position: relative;
 }
 .top-menu-sub ul  {
-    transition: all 400ms;
+    
     position: absolute;
     background: #fff;
     width: 335px;
@@ -1261,10 +1247,13 @@ li:hover i {
 
 .top-menu-sub>.fa-angle-right  {
     padding-left: 5px;
+    -webkit-transition: all 400ms;
     transition: all 400ms;
     color: inherit;
 }
 .top-menu-sub li {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     font-size: 13px;
     margin-top: 15px;

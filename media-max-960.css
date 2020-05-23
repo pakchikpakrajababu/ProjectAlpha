@@ -180,7 +180,6 @@
 
   .animation{
     -webkit-transition: all 400ms;
-    -o-transition: all 400ms;
     transition: all 400ms;
   }
   .top-menu.show {
@@ -225,10 +224,19 @@
     height: 100%;
     width: 100%;
     background: #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .mid-main-container {
@@ -616,26 +624,21 @@
   .height-adjuster {
       height: 150%;
   }
-  .show-submenu {
-    position: relative !important;
-    text-align: center;
-    width: 100% !important;
-    left: 0 !important;
-    background: #fff !important;
-    margin-top: -19px;
-    padding-top: 0 !important;
-    height: auto !important
-  }
+  
   .top-menu-sub ul {
     position: relative !important;
     left: 0 !important;
-    transition: none;
+    /* transition: none; */
+    height: 0;
     /* width: 100%!important; */
   }
   .top-menu-sub {
-    /* transition: none; */
+    -webkit-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
   }
   .top-menu-sub li {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     font-size: 13px;
     margin-top: 15px;
@@ -645,5 +648,16 @@
     width: 100% !important;
     margin-top: 30px !important;
     padding: 0;
+  }
+  .show-submenu {
+    position: relative !important;
+    text-align: center;
+    left: 0 !important;
+    background: #fff !important;
+    margin-top: -19px;
+    padding-top: 0 !important;
+    height: auto !important;
+    -webkit-transition:linear 400ms;
+    transition:linear 400ms;
   }
 }
