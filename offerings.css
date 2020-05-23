@@ -1179,7 +1179,10 @@ body {
 }
 
 a {
-	color: #0a8182
+	color: #0a8182;
+}
+.color-green{
+    color:#c7c7c7
 }
 
 a:active,
@@ -1305,11 +1308,12 @@ textarea:focus,
 
 .services a:hover,
 .services>li>ul li i {
-	color: #0a8182;
+	color: #ffffffb3;
 }
 
 .services a:hover{
-    color: #FFF
+
+    color: #ffffffb3;
 }
 
 .cta input {
@@ -1587,6 +1591,15 @@ table a,
 .addflex{
     flex:1;
     width: 17%
+}
+.no-margin-heading{
+    margin: 0;
+}
+.blog-creation-details{
+    margin: 0 0 20px 0;
+}
+.white-border{
+   border: 1px solid #fff;
 }
 
 @media screen and (max-width: 960px) {
