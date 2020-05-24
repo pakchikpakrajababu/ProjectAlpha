@@ -662,4 +662,7 @@
      transition:linear 200ms;
     -webkit-transition:linear 200ms;
   }
+  .header {
+    background-attachment: unset;
+  }
 }
