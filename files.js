@@ -302,12 +302,12 @@ console.log("ishere");
   //   e.stopPropagation(); /*Make all touch events stop at the #filter2 container element*/
   // });
 
-  $(document).bind("touchstart", function(e) {
+  /* $(document).bind("touchstart", function(e) {
     $("#solutions ul").removeClass("show-submenu");
     $("#solutions li").removeClass("show-submenu-li");
     $("#resources ul").removeClass("show-submenu");
     $("#resources li").removeClass("show-submenu-li");
-  });
+  }); */
 
   // $(".filters ul.children").bind("touchstart", function(event) {
   //   event.stopPropagation(); /*Make all touch events stop at the #filter1 ul.children container element*/
