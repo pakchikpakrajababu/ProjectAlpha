@@ -6,122 +6,133 @@
 <link href=media-min-961.css rel=stylesheet>
 <link href=media-max-960.css rel=stylesheet>
 <link href=media-320.css rel=stylesheet>
-<link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+<link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css" />
 <link href="font-awesome-5.13.0/css/all.min.css" rel="stylesheet">
 <link href="offerings.css" rel="stylesheet">
-<link href="images/nav-header/chepheus-logo-only.svg" rel="shortcut icon" type=image/x-icon>
-<link href="images/nav-header/chepheus-logo-only.svg" rel=icon type=image/x-icon>
-<script>
-!function(e,t,a,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new
-Date,o=t.createElement(a),s=t.getElementsByTagName(a)[0],o.async=1,o.src="https://www.google-analytics.com/analytics.js",s.parentNode.insertBefore(o,s)}(window,document,"script",0,"ga"),ga("create","UA-81644386-1","auto"),ga("send","pageview")
+<link href="images/nav-header/chepheus-logo-only.svg" rel="shortcut icon" type=image/x-icon> <link
+    href="images/nav-header/chepheus-logo-only.svg" rel=icon type=image/x-icon> <script>
+        !function (e, t, a, n, c, o, s) {
+        e.GoogleAnalyticsObject = c, e[c] = e[c] || function () { (e[c].q = e[c].q || []).push(arguments) }, e[c].l = 1 * new
+            Date, o = t.createElement(a), s = t.getElementsByTagName(a)[0], o.async = 1, o.src = "https://www.google-analytics.com/analytics.js", s.parentNode.insertBefore(o, s)
+        }(window, document, "script", 0, "ga"), ga("create", "UA-81644386-1", "auto"), ga("send", "pageview")
 
-</script>
+    </script>
 
 <body data-ng-controller=portfolioController>
-<div class=loader-container id=loader-div>
-    <div class="loaderImg">
-        <img class="blink-image" src="images/pages/cepheus-trans-logo.png" alt="Logo"/>
-    </div>
-    <div>
-        Loading...
-    </div>
-</div>
-<div class=body-pre></div>
-<div class=body-main><a style=display:none class=go-to-top id=back-to-top>
-    <div class=go-to-top><i class="fa fa-chevron-up" aria-hidden=true></i></div>
-</a>
-    <div class=header-container>
-        <div class=header>
-            <div style=width:100%;height:100%></div>
+    <div class=loader-container id=loader-div>
+        <div class="loaderImg">
+            <img class="blink-image" src="images/pages/cepheus-trans-logo.png" alt="Logo" />
         </div>
-        <div class=fab-cont style=display:none>
-            <div class="line one" id=one></div>
-            <div class="line two" id=two></div>
-            <div class="line three" id=three></div>
+        <div>
+            Loading...
         </div>
-        <div class=top-menu id=top-menu>
-                 <a href="./index.html" style=text-decoration:none;color:#234a58>
+    </div>
+    <div class=body-pre></div>
+    <div class=body-main><a style=display:none class=go-to-top id=back-to-top>
+            <div class=go-to-top><i class="fa fa-chevron-up" aria-hidden=true></i></div>
+        </a>
+        <div class=header-container>
+            <div class=header>
+                <div style=width:100%;height:100%></div>
+            </div>
+            <div class=fab-cont style=display:none>
+                <div class="line one" id=one></div>
+                <div class="line two" id=two></div>
+                <div class="line three" id=three></div>
+            </div>
+            <div class=top-menu id=top-menu>
+                <a href="./index.html" style=text-decoration:none;color:#234a58>
                     <div class="logo-container">
                         <img src="images/nav-header/chepheus-logo-only-trans.png" alt="Logo" />
                         <div class="cephuesLogo">CEPHEUS</div>
                     </div>
                 </a>
-                
+
                 <div class="menu-item-container">
+                    <div class=top-menu-sub id=Contact><a href="./index.html" style=text-decoration:none;color:#234a58>
+                            Home
+                        </a>
+                    </div>
                     <div class=top-menu-sub id=Education data-ng-click="scroller('midsection') ">About Us
-                        
+
                     </div>
-                    <div class=top-menu-sub><span>Solutions</span><i class="fas fa-angle-right"></i>
-                            <ul>
-                                <li class=top-menu-sub>
-                                    <a href="./analytics.html" style=text-decoration:none;color:#234a58>
-                                        <i class="fa fa-link"></i> Origination</li>
-                                    </a>
-                                <li class=top-menu-sub>
-                                    <a href="./analytics.html" style=text-decoration:none;color:#234a58>
-                                        <i class="fa fa-link"></i> Analytics
-                                    </a>
-                                </li>
-                                <li class=top-menu-sub>
-                                    <a href="./analytics.html" style=text-decoration:none;color:#234a58>
-                                        <i class="fa fa-link"></i> Servicing
-                                    </a>
-                                    </li>
-                                <li class=top-menu-sub>
-                                    <a href="./analytics.html" style=text-decoration:none;color:#234a58>
-                                        <i class="fa fa-link"></i> Technology
-                                    </a>
-                                    </li>
-                                <li class=top-menu-sub>
-                                    <a href="./analytics.html" style=text-decoration:none;color:#234a58>
-                                        <i class="fa fa-link"></i> ERP Implementation and Support
-                                        </a>
-                                </li>
-                        
-                            </ul>
+                    <div class=top-menu-sub id="solutions">
+                        <span class="solutionClick">Solutions</span>
+                        <i class="fas fa-angle-right solutionClick" id="unique"></i>
+                        <ul>
+                            <li class=top-menu-sub>
+                                <a href="./analytics.html" style=text-decoration:none;color:#234a58>
+                                    <i class="fa fa-link"></i> Origination</li>
+                            </a>
+                            </li>
+                            <li class=top-menu-sub>
+                                <a href="./analytics.html" style=text-decoration:none;color:#234a58>
+                                    <i class="fa fa-link"></i> Analytics
+                                </a>
+                            </li>
+                            <li class=top-menu-sub>
+                                <a href="./analytics.html" style=text-decoration:none;color:#234a58>
+                                    <i class="fa fa-link"></i> Servicing
+                                </a>
+                            </li>
+                            <li class=top-menu-sub>
+                                <a href="./analytics.html" style=text-decoration:none;color:#234a58>
+                                    <i class="fa fa-link"></i> Technology
+                                </a>
+                            </li>
+                            <li class=top-menu-sub>
+                                <a href="./analytics.html" style=text-decoration:none;color:#234a58>
+                                    <i class="fa fa-link"></i> ERP Implementation and Support
+                                </a>
+                            </li>
+
+                        </ul>
                     </div>
-                    <div class=top-menu-sub><span>Resources</span><i class="fas fa-angle-right"></i>
-                            <ul>
-                                <li class=top-menu-sub><i class="fa fa-link"></i> News</li>
-                                <li class=top-menu-sub><i class="fa fa-link"></i> Media</li>
-                                <li class=top-menu-sub><i class="fa fa-link"></i> Blog</li>
-                                <li class=top-menu-sub><i class="fa fa-link"></i> Case Study</li>
-                            </ul>
+                    <div class=top-menu-sub id="resources"><span class="resourcesClick">Resources</span><i
+                            class="fas fa-angle-right resourcesClick"></i>
+                        <ul>
+                            <li class=top-menu-sub><i class="fa fa-link"></i> News</li>
+                            <li class=top-menu-sub><i class="fa fa-link"></i> Media</li>
+                            <li class=top-menu-sub><i class="fa fa-link"></i> Blog</li>
+                            <li class=top-menu-sub><i class="fa fa-link"></i> Case Study</li>
+                        </ul>
                     </div>
-                    
-                  
-                    <div class=top-menu-sub id=Contact><a href="./ContactUs.html" style=text-decoration:none;color:#234a58>
+
+                    <div class=top-menu-sub id=Contact><a href="./ContactUs.html"
+                            style=text-decoration:none;color:#234a58>
                             Contact Us
                         </a>
                     </div>
 
                 </div>
             </div>
+        </div>
         <div class="header-sub text">
             <div class=Header-sub-sub>
                 <div class="title_logo">
-                    <img src="images/pages/cepheus-trans-logo.png" alt="Logo"/>
+                    <img src="images/pages/cepheus-trans-logo.png" alt="Logo" />
                 </div>
                 <div class="head-main shimmer">CEPHEUS ANALYTICS</div>
-                <div class=webdeveloper><p>Formed in 2014, Cepheus Analytics is a UK based provider of origination,
-                    analytics (underwriting and scorecard development), loan servicing, Technology solutions
-                    implementation services to Financial Companies and Private Equity firms.</p></div>
+                <div class=webdeveloper>
+                    <p>Formed in 2014, Cepheus Analytics is a UK based provider of origination,
+                        analytics (underwriting and scorecard development), loan servicing, Technology solutions
+                        implementation services to Financial Companies and Private Equity firms.</p>
+                </div>
             </div>
             <div class=social-media-homepage>
                 <div class=social_media_icons><a style=text-decoration:none;color:#fff
-                                                 href=https://twitter.com/vaibhavti target=_blank>
-                    <div class=social_icon_container><i class="fab fa-2x fa-twitter"></i></div>
-                </a><a style=text-decoration:none;color:#fff
-                       href="https://www.linkedin.com/in/vaibhav-tiwari-69842023?trk=hp-identity-name"
-                       target=_blank>
-                    <div class=social_icon_container><i class="fab fa-2x fa-linkedin-in"></i></div>
-                </a><a style=text-decoration:none;color:#fff href=https://www.facebook.com/tvaibhav1204
-                       target=_blank>
-                    <div class=social_icon_container><i class="fab fa-2x fa-facebook-f"></i></div>
-                </a><a style=text-decoration:none;color:#fff href=https://www.youtube.com/user/1204vaibhav
-                       target=_blank>
-                    <div class=social_icon_container><i class="fab fa-2x fa-youtube"></i></div>
-                </a></div>
+                        href=https://twitter.com/vaibhavti target=_blank>
+                        <div class=social_icon_container><i class="fab fa-2x fa-twitter"></i></div>
+                    </a><a style=text-decoration:none;color:#fff
+                        href="https://www.linkedin.com/in/vaibhav-tiwari-69842023?trk=hp-identity-name" target=_blank>
+                        <div class=social_icon_container><i class="fab fa-2x fa-linkedin-in"></i></div>
+                    </a><a style=text-decoration:none;color:#fff href=https://www.facebook.com/tvaibhav1204
+                        target=_blank>
+                        <div class=social_icon_container><i class="fab fa-2x fa-facebook-f"></i></div>
+                    </a><a style=text-decoration:none;color:#fff href=https://www.youtube.com/user/1204vaibhav
+                        target=_blank>
+                        <div class=social_icon_container><i class="fab fa-2x fa-youtube"></i></div>
+                    </a></div>
             </div>
         </div>
     </div>
@@ -249,17 +260,22 @@ Date,o=t.createElement(a),s=t.getElementsByTagName(a)[0],o.async=1,o.src="https:
 
 
             </ul>
-            <footer class="center"><a class="btn" href="#">Read More <i class="fas fa-angle-double-right"></i></a></footer>
+            <footer class="center"><a class="btn" href="#">Read More <i class="fas fa-angle-double-right"></i></a>
+            </footer>
         </section>
     </div>
     <!-- *******************************Clients Served******************************-->
     <div class="wrapper row3">
         <figure class="hoc container clear clients">
             <ul class="nospace group">
-                <li class="one_quarter first"><a class="imgover" href="#"><img src="images/pages/home/clients/client-01.jpg" alt="Template Demo Image"></a></li>
-                <li class="one_quarter"><a class="imgover" href="#"><img src="images/pages/home/clients/client-02.jpg" alt="Template Demo Image"></a></li>
-                <li class="one_quarter"><a class="imgover" href="#"><img src="images/pages/home/clients/client-03.jpg" alt="Template Demo Image"></a></li>
-                <li class="one_quarter"><a class="imgover" href="#"><img src="images/pages/home/clients/client-04.jpg" alt="Template Demo Image"></a></li>
+                <li class="one_quarter first"><a class="imgover" href="#"><img
+                            src="images/pages/home/clients/client-01.jpg" alt="Template Demo Image"></a></li>
+                <li class="one_quarter"><a class="imgover" href="#"><img src="images/pages/home/clients/client-02.jpg"
+                            alt="Template Demo Image"></a></li>
+                <li class="one_quarter"><a class="imgover" href="#"><img src="images/pages/home/clients/client-03.jpg"
+                            alt="Template Demo Image"></a></li>
+                <li class="one_quarter"><a class="imgover" href="#"><img src="images/pages/home/clients/client-04.jpg"
+                            alt="Template Demo Image"></a></li>
             </ul>
         </figure>
     </div>
@@ -280,7 +296,8 @@ Date,o=t.createElement(a),s=t.getElementsByTagName(a)[0],o.async=1,o.src="https:
                         <li><i class="fas fa-pencil-alt"></i> James Phelps</li>
                         <li><span class="color-green">Jan 18, 2019</span></li>
                     </ul>
-                    <p>Aliquet erat nisi in nisi in vel porttitor leo proin eget volutpat lorem donec a ipsum nunc dui enim sollicitudin eget…</p>
+                    <p>Aliquet erat nisi in nisi in vel porttitor leo proin eget volutpat lorem donec a ipsum nunc dui
+                        enim sollicitudin eget…</p>
                     <footer><a href="#">Read More</a></footer>
                 </article>
                 <article class="one_third">
@@ -292,7 +309,8 @@ Date,o=t.createElement(a),s=t.getElementsByTagName(a)[0],o.async=1,o.src="https:
                         <li><i class="fas fa-pencil-alt"></i> James Phelps</li>
                         <li><span class="color-green">Jan 18, 2019</span></li>
                     </ul>
-                    <p>Sit amet libero nam gravida eros eget quam porttitor iaculis phasellus ultrices turpis sapien mauris tortor pulvinar…</p>
+                    <p>Sit amet libero nam gravida eros eget quam porttitor iaculis phasellus ultrices turpis sapien
+                        mauris tortor pulvinar…</p>
                     <footer><a href="#">Read More</a></footer>
                 </article>
                 <article class="one_third">
@@ -304,11 +322,13 @@ Date,o=t.createElement(a),s=t.getElementsByTagName(a)[0],o.async=1,o.src="https:
                         <li><i class="fas fa-pencil-alt"></i> James Phelps</li>
                         <li><span class="color-green">Jan 18, 2019</span></li>
                     </ul>
-                    <p>Consequat ante duis non lobortis urna integer vehicula ex non ante ultricies maximus sed tempus felis non enim…</p>
+                    <p>Consequat ante duis non lobortis urna integer vehicula ex non ante ultricies maximus sed tempus
+                        felis non enim…</p>
                     <footer><a href="#">Read More</a></footer>
                 </article>
             </div>
-            <footer class="center"><a class="btn" href="#">Read More <i class="fas fa-angle-double-right"></i></a></footer>
+            <footer class="center"><a class="btn" href="#">Read More <i class="fas fa-angle-double-right"></i></a>
+            </footer>
         </section>
     </div>
     <!-- *******************************Footer******************************-->
@@ -317,34 +337,32 @@ Date,o=t.createElement(a),s=t.getElementsByTagName(a)[0],o.async=1,o.src="https:
             Vaibhav Tiwari
         </div>
         <div class=footer_social>
-            <div class=social_media_icons><a style=text-decoration:none;color:#fff
-                                             href=https://twitter.com/vaibhavti target=_blank>
-                <div class=social_icon_container><i class="fab fa-2x fa-twitter"></i></div>
-            </a><a style=text-decoration:none;color:#fff
-                   href="https://www.linkedin.com/in/vaibhav-tiwari-69842023?trk=hp-identity-name" target=_blank>
-                <div class=social_icon_container><i class="fab fa-2x fa-linkedin-in"></i></div>
-            </a><a style=text-decoration:none;color:#fff href=https://www.facebook.com/tvaibhav1204
-                   target=_blank>
-                <div class=social_icon_container><i class="fab fa-2x fa-facebook-f"></i></div>
-            </a><a style=text-decoration:none;color:#fff href=https://www.youtube.com/user/1204vaibhav
-                   target=_blank>
-                <div class=social_icon_container><i class="fab fa-2x fa-youtube"></i></div>
-            </a></div>
+            <div class=social_media_icons><a style=text-decoration:none;color:#fff href=https://twitter.com/vaibhavti
+                    target=_blank>
+                    <div class=social_icon_container><i class="fab fa-2x fa-twitter"></i></div>
+                </a><a style=text-decoration:none;color:#fff
+                    href="https://www.linkedin.com/in/vaibhav-tiwari-69842023?trk=hp-identity-name" target=_blank>
+                    <div class=social_icon_container><i class="fab fa-2x fa-linkedin-in"></i></div>
+                </a><a style=text-decoration:none;color:#fff href=https://www.facebook.com/tvaibhav1204 target=_blank>
+                    <div class=social_icon_container><i class="fab fa-2x fa-facebook-f"></i></div>
+                </a><a style=text-decoration:none;color:#fff href=https://www.youtube.com/user/1204vaibhav
+                    target=_blank>
+                    <div class=social_icon_container><i class="fab fa-2x fa-youtube"></i></div>
+                </a></div>
         </div>
     </div>
-</div>
+    </div>
 
-<script src=https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js></script>
-<script src=jQuery-1.9.1.js></script>
-<script src=jQqueryKnob.js></script>
-<script src=smooth%20scroll.js></script>
-<script src=inview.js></script>
-<script src=soul.min.js></script>
-<script src=files.js></script>
-<script src=tweenMax.min.js></script>
-<script src=ScrollToPlugin.min.js></script>
-<script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
-<script src=https://www.gstatic.com/firebasejs/3.0.3/firebase.js></script>
-<script src=https://www.gstatic.com/firebasejs/live/3.0/firebase.js></script>
-<script src=https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js></script>
-        
+    <script src=https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js> </script> <script
+        src=jQuery-1.9.1.js></script>
+    <script src=jQqueryKnob.js></script>
+    <script src=smooth%20scroll.js></script>
+    <script src=inview.js></script>
+    <script src=soul.min.js></script>
+    <script src=files.js></script>
+    <script src=tweenMax.min.js></script>
+    <script src=ScrollToPlugin.min.js></script>
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+    <script src=https://www.gstatic.com/firebasejs/3.0.3/firebase.js> </script> <script
+        src=https://www.gstatic.com/firebasejs/live/3.0/firebase.js> </script> <script
+        src=https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js> </script>

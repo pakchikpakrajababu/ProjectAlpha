@@ -1628,5 +1628,11 @@ table a,
 	.row3 {
 		text-align: center;
 	}
+	.latest article {
+    	max-width: 100%;
+	}
+	.latest {
+		text-align: center;
+	}
 }
 	
