@@ -659,7 +659,7 @@
     margin-top: -19px;
     padding-top: 0 !important;
     height: 215px !important;
-     transition:linear 100ms;
-    -webkit-transition:linear 100ms;
+     transition:linear 200ms;
+    -webkit-transition:linear 200ms;
   }
 }
