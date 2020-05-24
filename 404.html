@@ -12,7 +12,7 @@
     href=images/nav-header/chepheus-logo-only.svg rel=icon type=image/x-icon> <link rel="stylesheet"
     href="./template.css">
 <style>
-    .home-link {
+   .home-link {
         margin-top: 25px;
         background: #1a313e;
         color: #fff;
@@ -29,9 +29,35 @@
         height: calc(100% - 100px);
     }
     .contactusTitle {
-        box-shadow: none;
+        -webkit-box-shadow: none;
+                box-shadow: none;
         padding:unset;
         font-size: 3em;
+    }
+@media screen and (max-width: 960px) {
+    .top-backg{
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .contactusTitle {
+        font-size: 2em;
+    }
+    .template_logo-container{
+        padding: unset;
+        
+    }
 }
 </style>
 
