@@ -274,7 +274,8 @@ function isTouchDevice() {
 if (isTouchDevice()) {
 console.log("ishere");
   /*Show #filter1 drop-down and hide #filter2 drop-down if it was open*/
-  $("#solutions").bind("touchstart", function(e) {
+  $(".solutionClick").bind("click", function(e) {
+    console.log("Coming inside");
     if ($("#resources ul").hasClass("show-submenu")) {
       $("#resources ul").toggleClass("show-submenu");
       $("#resources li").toggleClass("show-submenu-li");
@@ -284,7 +285,7 @@ console.log("ishere");
     /* $("#filter2 ul.children").css("display", "none"); */
     e.stopPropagation(); /*Make all touch events stop at the #filter1 container element*/
   });
-  $("#resources").bind("touchstart", function(e) {
+  $(".resourcesClick").bind("click", function(e) {
     if ($("#solutions ul").hasClass("show-submenu")) {
       $("#solutions ul").toggleClass("show-submenu");
       $("#solutions li").toggleClass("show-submenu-li");
@@ -301,9 +302,12 @@ console.log("ishere");
   //   e.stopPropagation(); /*Make all touch events stop at the #filter2 container element*/
   // });
 
-  // $(document).bind("touchstart", function(e) {
-  //   $("#solutions ul.children").fadeOut(300); /*Close filters drop-downs if user taps ANYWHERE in the page*/
-  // });
+  $(document).bind("touchstart", function(e) {
+    $("#solutions ul").removeClass("show-submenu");
+    $("#solutions li").removeClass("show-submenu-li");
+    $("#resources ul").removeClass("show-submenu");
+    $("#resources li").removeClass("show-submenu-li");
+  });
 
   // $(".filters ul.children").bind("touchstart", function(event) {
   //   event.stopPropagation(); /*Make all touch events stop at the #filter1 ul.children container element*/
