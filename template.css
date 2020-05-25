@@ -281,16 +281,27 @@ li:hover i {
     text-transform: uppercase;
 }
 .cepheusAdvantage{
-    padding-top: 30px;
+    margin-top: 30px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
+    background: radial-gradient(circle, rgba(10,129,130,1) 0%, rgba(26,49,62,1) 100%);
 }
 .twoinarow{
-  justify-content: center
+  justify-content: center;
+  padding: 40px 40px 15px 40px;
 }
 .cctwoinarow{
+  min-height: 230px;
   max-width: 540px;
 }
+.cepheusAdvantage .contactusTitle {
+  color: #fff;
+}
+.cepheusAdvantage .card {
+  background: #fff;
+}
+
 /* .animatable {
   
   visibility: hidden;
@@ -400,7 +411,7 @@ li:hover i {
     margin-top: 0px;
   }
   .cardHolder {
-    padding: 0px 40px 0px 20px;
+    padding: 0px 20px 0px 20px;
     min-height: 200px;
     margin-bottom: 15%;
   }
@@ -451,6 +462,9 @@ li:hover i {
   }
   .twoinarow{
     margin-bottom: 15px;
+  }
+  .cepheusAdvantage{
+    padding-bottom: 30px;
   }
 }
 @media screen and (min-width: 1080px) {
