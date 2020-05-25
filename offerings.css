@@ -1307,7 +1307,8 @@ textarea:focus,
 
 .services a,
 .services>li>ul li:hover i {
-	color: #FFF
+	color: #FFF;
+	font-size: 1.1rem;
 }
 
 .services a:hover,
@@ -1623,6 +1624,7 @@ table a,
 	}
 	.one_quarter h6 {
 		color : #0a8182;
+		font-size: 1.9rem;
 	}
 	.services>li>ul li {
 		justify-content: center;

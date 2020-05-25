@@ -260,7 +260,9 @@ var doAnimations = function() {
 
 function isTouchDevice() {
   var prefixes = ["", "-webkit-", "-moz-", "-o-", "-ms-", ""];
-  var mq = query => window.matchMedia(query).matches;
+   var mq = function(query) {
+     window.matchMedia(query).matches;
+   }; 
 
   if (
     "ontouchstart" in window ||
@@ -279,9 +281,11 @@ console.log("ishere");
     if ($("#resources ul").hasClass("show-submenu")) {
       $("#resources ul").toggleClass("show-submenu");
       $("#resources li").toggleClass("show-submenu-li");
+      $("#resources .fa-angle-right").toggleClass("dropdown-rotate");
     }
     $("#solutions ul").toggleClass("show-submenu");
     $("#solutions li").toggleClass("show-submenu-li");
+    $("#solutions .fa-angle-right").toggleClass("dropdown-rotate");
     /* $("#filter2 ul.children").css("display", "none"); */
     e.stopPropagation(); /*Make all touch events stop at the #filter1 container element*/
   });
@@ -289,9 +293,11 @@ console.log("ishere");
     if ($("#solutions ul").hasClass("show-submenu")) {
       $("#solutions ul").toggleClass("show-submenu");
       $("#solutions li").toggleClass("show-submenu-li");
+      $("#solutions .fa-angle-right").toggleClass("dropdown-rotate");
     }
     $("#resources ul").toggleClass("show-submenu");
     $("#resources li").toggleClass("show-submenu-li");
+    $("#resources .fa-angle-right").toggleClass("dropdown-rotate");
     /* $("#filter2 ul.children").css("display", "none"); */
     e.stopPropagation(); /*Make all touch events stop at the #filter1 container element*/
   });
