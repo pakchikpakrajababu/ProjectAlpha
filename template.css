@@ -229,13 +229,13 @@ li:hover i {
   color: #1a313e;
 }
 .leftDiv {
-  background: url("images/pages/solutions/analytics/analytics-01.jpg");
+  /*background: url("images/pages/solutions/analytics/analytics-01.jpg");*/
   background-size: cover;
   background-position: 0px 0px;
 }
 
 .other {
-  background: url("images/pages/solutions/analytics/analytics-02.jpg");
+  /*background: url("images/pages/solutions/analytics/analytics-02.jpg");*/
   background-size: cover;
   background-position: 0px;
 }
@@ -262,6 +262,7 @@ li:hover i {
 }
 .innerHeading ul li i {
   padding-right: 10px;
+  color: #0a8182;
 }
 .inverse {
   flex-direction: row-reverse;
@@ -275,6 +276,14 @@ li:hover i {
     background-size: cover;
     background-attachment: fixed;
 }
+
+.textToUppercase{
+    text-transform: uppercase;
+}
+.cepheusAdvantage{
+    padding-top: 30px;
+}
+
 /* .animatable {
   
   visibility: hidden;
