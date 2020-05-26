@@ -174,5 +174,19 @@
         -ms-flex-direction: column;
             flex-direction: column;
 }
+                                
+                                
+/* .header-sub .social-media-homepage{
+    display: none;
+    
+} */
+.header-sub{
+    height: unset;
+    
+}
+.header-sub .site-section {
+    padding-top: 0;
+    
+}
 }
   
