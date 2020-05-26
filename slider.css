@@ -72,7 +72,7 @@ user agent stylesheet section {
     font-size: 1.1rem;
 }
   .site-section{
-      padding-top: 0;
+      padding-top: 5px;
   }
   .slide-one-item .owl-dots {
       text-align: center;
@@ -115,8 +115,8 @@ blockquote {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #7a7a7ac7;
+    background:#7a7a7ac7;
 }
 .slide-one-item .owl-dots .owl-dot.active span {
-    background: #1a313e;
+    background: #650915;
 }
