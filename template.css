@@ -66,9 +66,15 @@ li:hover i {
   padding: 72px 40px 0px 40px;
   text-align: center;
   background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 350px;
 }
 .template_logo-container img {
@@ -77,8 +83,12 @@ li:hover i {
 
 .sepr {
   height: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 10px 0 8px 0;
 }
 .sepr div {
@@ -93,7 +103,8 @@ li:hover i {
   padding: 30px 40px 15px 40px;
   color: rgba(101, 9, 21, 0.7215686274509804);
   text-align: center;
-  box-shadow: 0 -5px 6px -5px #a9a9a9;
+  -webkit-box-shadow: 0 -5px 6px -5px #a9a9a9;
+          box-shadow: 0 -5px 6px -5px #a9a9a9;
 }
 
 .content-container {
@@ -109,11 +120,20 @@ li:hover i {
   font-size: 15px;
   letter-spacing: 0.5px;
   color: #1a313e;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   /* text-align: justify; */
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .content p {
@@ -201,25 +221,36 @@ li:hover i {
   /* background-position-x: -30px; */
   min-height: 100%;
   width: 100%;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 /* Loan Portfolio Section */
 
 .parentDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1080px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: cool;
   margin: 50px;
 }
 .leftDiv {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   /* box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); */
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 .rightDiv {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   margin-left: 50px;
   margin-right: 50px;
 }
@@ -241,8 +272,12 @@ li:hover i {
 }
 
 .section-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .innerHeading {
   margin-top: 20px;
@@ -254,18 +289,25 @@ li:hover i {
 }
 .innerHeading ul {
   list-style: none;
-  padding: 4px 0 0 19px;
+  padding: 4px 0 0 5px;
 }
 .innerHeading ul li {
   margin: 10px;
   font-size: 15px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+
 }
 .innerHeading ul li i {
   padding-right: 10px;
   color: #0a8182;
 }
 .inverse {
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   margin-top: 30px;
 }
 .inverse .rightDiv {
@@ -283,12 +325,19 @@ li:hover i {
 .cepheusAdvantage{
     margin-top: 30px;
     padding-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background: radial-gradient(circle, rgba(10,129,130,1) 0%, rgba(26,49,62,1) 100%);
 }
 .twoinarow{
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 40px 40px 15px 40px;
 }
 .cctwoinarow{
@@ -381,13 +430,20 @@ li:hover i {
 }
  */
 
+.no-border{
+  border: none !important;
+}
+
 .section-container {
-  animation: 1s ease-out 0s 1 slideInFromLeft;
+  -webkit-animation: 1s ease-out 0s 1 slideInFromLeft;
+          animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 /* Loan Portfolio Section --- END */
 @media screen and (max-width: 960px) {
   .contact-card-container {
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     min-height: 1px;
   }
   .address-container {
@@ -424,19 +480,29 @@ li:hover i {
     line-height: 21px;
   }
   .parentDiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-family: cool;
     margin: 0px;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     min-height: 1205px;
   }
   .rightDiv {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     margin: 50px 5px 50px 15px;
   }
   .leftDiv {
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 5px 10px;
@@ -451,7 +517,7 @@ li:hover i {
     min-height: 700px;
   }
   .content {
-    padding: 0 40px 30px 42px;
+    padding: 0 30px 30px 30px;
   }
   .template_logo-container {
     padding: 50px 40px 50px 40px;

@@ -44,7 +44,7 @@ user agent stylesheet section {
   z-index: 1;
 }
 .testimonial {
-  max-width: 800px;
+  max-width: 835px;
   margin-left: 50px;
 }
 /******* slider text section**********/
@@ -57,7 +57,7 @@ user agent stylesheet section {
     text-transform: none;
     color: #1a313e;
     font-style: italic;
-    font-size: 4.2em;
+    font-size: 3.1rem;
 }
 @media screen and (max-width: 960px) {
   .testimonial {
@@ -91,7 +91,7 @@ blockquote {
 
 @media (min-width: 768px) {
   .site-section {
-    padding: 5em 0;
+    padding: 8em 0 5em 0;
   }
   .site-section-heading {
     font-size: 2.5rem;
@@ -104,7 +104,7 @@ blockquote {
 /************** Dots************/
 .slide-one-item .owl-dots {
     /*text-align: center;*/
-    margin: 50px 50px;
+    margin: 10px 55px;
 }
 .slide-one-item .owl-dots .owl-dot {
     display: inline-block;
