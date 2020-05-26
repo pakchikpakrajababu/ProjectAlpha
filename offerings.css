@@ -376,6 +376,7 @@ section {
 	width: 22.69938650306748%
 }
 
+
 .one_third {
 	width: 31.28834355828221%
 }
@@ -1469,6 +1470,26 @@ table a,
 	background-color: inherit
 }
 
+.clients{
+	padding-top: 15px;
+}
+.client_name{
+	height: 160px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: none;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	background: radial-gradient(circle, rgba(10,129,130,1) 0%, rgba(26,49,62,1) 100%);
+}
+.client_name:hover{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.client_name h2{
+	margin-bottom: 0;
+	color: #fff;
+}
+
 @-ms-viewport {
 	width: device-width
 }
@@ -1562,6 +1583,16 @@ table a,
 	}
 	.cta>:first-child {
 		margin-top: 0
+	}
+	.client_name{
+		height: 160px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-transform: none;
+		margin-bottom: 30px;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		background: radial-gradient(circle, rgba(10,129,130,1) 0%, rgba(26,49,62,1) 100%);
 	}
 }
 
