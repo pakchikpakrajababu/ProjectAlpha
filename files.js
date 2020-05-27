@@ -56,6 +56,9 @@ jQuery(function($) {
     if ($(window).height() < 425) {
       $(".header").addClass("height-adjuster");
     }
+    if (window.innerHeight < window.innerWidth) {
+      $(".header-sub").addClass("landscapeheight");
+    }
     if (jQuery(window).width() < 960) {
       $(".fab-cont").slideDown("fast");
       $(".logo-container").hide();
@@ -187,6 +190,15 @@ $(window).resize(function() {
   }
 });
 
+window.addEventListener("resize", function() {
+    // Get screen size (inner/outerWidth, inner/outerHeight)
+
+    if (window.innerHeight < window.innerWidth) {
+      $(".header-sub").addClass("landscapeheight");
+    } else {
+      $(".header-sub").removeClass("landscapeheight");
+    }
+  }, false);
 // Function which adds the 'animated' class to any '.animatable' in view
 var doAnimations = function() {
   // Calc current offset and get all animatables
@@ -225,20 +237,16 @@ function isTouchDevice() {
 }
 
 if (isTouchDevice()) {
-console.log("ishere");
-  /*Show #filter1 drop-down and hide #filter2 drop-down if it was open*/
   $(".solutionClick").bind("click", function(e) {
-    console.log("Coming inside");
     if ($("#resources ul").hasClass("show-submenu")) {
-      $("#resources ul").toggleClass("show-submenu");
+      $("#resources ul").toggleClass("show-submenu").toggleClass("height-mobile");
       $("#resources li").toggleClass("show-submenu-li");
       $("#resources .fa-angle-right").toggleClass("dropdown-rotate");
     }
     $("#solutions ul").toggleClass("show-submenu");
     $("#solutions li").toggleClass("show-submenu-li");
     $("#solutions .fa-angle-right").toggleClass("dropdown-rotate");
-    /* $("#filter2 ul.children").css("display", "none"); */
-    e.stopPropagation(); /*Make all touch events stop at the #filter1 container element*/
+    e.stopPropagation();
   });
   $(".resourcesClick").bind("click", function(e) {
     if ($("#solutions ul").hasClass("show-submenu")) {
@@ -246,33 +254,12 @@ console.log("ishere");
       $("#solutions li").toggleClass("show-submenu-li");
       $("#solutions .fa-angle-right").toggleClass("dropdown-rotate");
     }
-    $("#resources ul").toggleClass("show-submenu");
+    $("#resources ul").toggleClass("show-submenu").toggleClass("height-mobile");
     $("#resources li").toggleClass("show-submenu-li");
     $("#resources .fa-angle-right").toggleClass("dropdown-rotate");
-    /* $("#filter2 ul.children").css("display", "none"); */
-    e.stopPropagation(); /*Make all touch events stop at the #filter1 container element*/
+    e.stopPropagation(); 
   });
-  /*Show #filter2 drop-down and hide #filter1 drop-down if it was open*/
-  // $("#filter2").bind("touchstart", function(e) {
-  //   $("#filter2 ul.children").toggle();
-  //   $("#filter1 ul.children").css("display", "none");
-  //   e.stopPropagation(); /*Make all touch events stop at the #filter2 container element*/
-  // });
 
-  /* $(document).bind("touchstart", function(e) {
-    $("#solutions ul").removeClass("show-submenu");
-    $("#solutions li").removeClass("show-submenu-li");
-    $("#resources ul").removeClass("show-submenu");
-    $("#resources li").removeClass("show-submenu-li");
-  }); */
-
-  // $(".filters ul.children").bind("touchstart", function(event) {
-  //   event.stopPropagation(); /*Make all touch events stop at the #filter1 ul.children container element*/
-  // });
-
-  // $(".filters ul.children a").click(function() {
-  //   $(".filters ul.children").fadeOut(
-  //     300
-  //   ); /*Close filters drop-downs if user taps on any link in drop-down*/
-  // });
 }
+
+

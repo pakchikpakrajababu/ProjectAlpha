@@ -125,6 +125,8 @@
 
   .top-menu-sub {
     padding: 5px;
+    display: flex;
+    align-items: center;
   }
 
   .skill-background {

@@ -463,6 +463,9 @@
     left: 0;
     padding: 0 5vw 0 5vw;
   }
+  .landscapeheight{
+    height: 400px;
+  }  
 
   .head-main {
     font-size: 13vw;
@@ -591,13 +594,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0px 40px 50px 40px;
+  padding: 0px 30px 50px 30px;
   }
 
   .card-container {
     margin-top: 30px;
     border-right: none;
-    min-height: 337px;
+    min-height: 300px;
   }
 
   .card {
@@ -614,6 +617,9 @@
 
   .first {
       margin-top: 15px;
+  }
+  .serve-container{
+  min-height: 175px;
   }
   .card-section-container{
     background: #fff;
@@ -632,7 +638,7 @@
     position: relative !important;
     left: 0 !important;
     /* transition: none; */
-    height: 0;
+    
     /* width: 100%!important; */
   }
   .top-menu-sub {
@@ -661,9 +667,12 @@
     background: #fff !important;
     margin-top: -19px;
     padding-top: 0 !important;
-    height: 215px !important;
+    height: 250px !important;
      transition:linear 200ms;
     -webkit-transition:linear 200ms;
+  }
+  .height-mobile{
+    height: 215px !important;
   }
   .header {
     background-attachment: unset;

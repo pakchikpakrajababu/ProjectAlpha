@@ -5,11 +5,11 @@
 * Browsers: last 4 version
 */
 
-/* .top-menu{
+ .top-menu{
     background: #fff;
     border-bottom: 1px solid #c7c7c7;
 }
-.top-menu-sub{
+/*.top-menu-sub{
     position: relative;
 }
 .top-menu-sub ul  {
@@ -62,6 +62,9 @@ li:hover i {
 /* .logo-title {
     height: 10em;
 } */
+/* .fab-cont{
+  display: none !important;
+} */
 .template_logo-container {
   padding: 72px 40px 0px 40px;
   text-align: center;
@@ -75,7 +78,7 @@ li:hover i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 350px;
+  height: 160px;
 }
 .template_logo-container img {
   height: 170px;
@@ -89,7 +92,7 @@ li:hover i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 10px 0 8px 0;
+          margin: 10px 0 8px 0;
 }
 .sepr div {
   background: #222;
@@ -100,14 +103,28 @@ li:hover i {
 .contactusTitle {
   font-family: cool;
   font-size: 2em;
-  padding: 30px 40px 15px 40px;
+  padding: 40px 40px 15px 40px;
   color: rgba(101, 9, 21, 0.7215686274509804);
   text-align: center;
   -webkit-box-shadow: 0 -5px 6px -5px #a9a9a9;
           box-shadow: 0 -5px 6px -5px #a9a9a9;
-}
-
-.content-container {
+        }
+        
+        .img-holder{
+            font-size: 2.5em;
+            margin-top: 100px;
+            padding: 0px 40px 0px 40px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            background-size: cover;
+            background-position: center;
+            background: rgb(26,57,74);
+            background: radial-gradient(circle, rgba(26,57,74,1) 0%, rgba(43,76,94,0.9864320728291317) 56%);
+        }
+        .content-container {
   font-family: cool;
   font-size: 1.3em;
   padding: 0 40px 10px 40px;
@@ -116,8 +133,8 @@ li:hover i {
 }
 .content {
   font-family: cool;
-  padding: 0 40px 15px 42px;
-  font-size: 15px;
+  padding: 20px 40px 0px 42px;
+  font-size: 17px;
   letter-spacing: 0.5px;
   color: #1a313e;
   display: -webkit-box;
@@ -314,9 +331,7 @@ li:hover i {
   margin-left: 0;
 }
 .top-backg{
-    background: url("images/pages/home/section1-bg.jpg");
-    background-size: cover;
-    background-attachment: fixed;
+    display: none;
 }
 
 .textToUppercase{
@@ -440,6 +455,11 @@ li:hover i {
 }
 /* Loan Portfolio Section --- END */
 @media screen and (max-width: 960px) {
+  .top-backg{
+    display: block;
+    background-size: cover;
+    background-attachment: fixed;
+  }
   .contact-card-container {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -476,7 +496,7 @@ li:hover i {
   }
   .content p {
     width: 100%;
-    text-align: justify;
+    text-align: center;
     line-height: 21px;
   }
   .parentDiv {
@@ -492,7 +512,7 @@ li:hover i {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    min-height: 1205px;
+    min-height: 200px;
   }
   .rightDiv {
     -webkit-box-flex: 1;
@@ -505,10 +525,13 @@ li:hover i {
             box-shadow: none;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 5px 10px;
+    min-height: 300px;
   }
   .section-container {
     margin-top: 30px;
+  }
+  .no-margin-mobile{
+    margin-top: 0;
   }
   .inverse .rightDiv {
     margin: 50px 5px 50px 15px;
@@ -517,7 +540,7 @@ li:hover i {
     min-height: 700px;
   }
   .content {
-    padding: 0 30px 30px 30px;
+    padding: 20px 30px 0px 30px;
   }
   .template_logo-container {
     padding: 50px 40px 50px 40px;
@@ -531,6 +554,12 @@ li:hover i {
   }
   .cepheusAdvantage{
     padding-bottom: 30px;
+  }
+  .img-holder{
+    font-size: 2.3em;
+    margin-top: 0px;
+    padding: 0px 30px 0px 30px;
+    height: 250px;
   }
 }
 @media screen and (min-width: 1080px) {

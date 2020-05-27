@@ -132,8 +132,8 @@ html {
 
 .fab-cont {
   position: fixed;
-  right: 25px;
-  top: 25px;
+  right: 16px;
+  top: 37px;
   z-index: 1000;
   padding: 26px;
   margin: -26px;
@@ -1162,7 +1162,7 @@ li:hover i {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 30px 40px 50px 40px;
+  padding: 0px 40px 60px 40px;
 }
 .card-container {
   -webkit-box-flex:1;
@@ -1188,7 +1188,7 @@ li:hover i {
           box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   -webkit-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  /* border: 1px solid #eee; */
+  border: 1px solid #eee;
 }
 .card:hover {
   -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -1217,6 +1217,11 @@ li:hover i {
   font-weight: 600;
   margin-top: 15px;
   text-transform: uppercase;
+}
+.serve{
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .whyUsTitle{
   font-family: cool;
@@ -1250,6 +1255,7 @@ li:hover i {
     -webkit-transition: all 400ms;
     transition: all 400ms;
     color: inherit;
+    margin-top: 2px;
 }
 .top-menu-sub li {
     width: -webkit-fit-content;
