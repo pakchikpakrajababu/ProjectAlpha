@@ -312,6 +312,7 @@ li:hover i {
           justify-content: center;
   font-family: cool;
   margin: 50px;
+  min-height: 300px;
 }
 .leftDiv {
   -webkit-box-flex: 1;
@@ -327,11 +328,17 @@ li:hover i {
           flex: 1;
   margin-left: 50px;
   margin-right: 50px;
+  display: flex;
+      flex-direction: column;
+      justify-content: center;
 }
 .rightDiv h2 {
   border-bottom: 1px solid black;
   font-weight: 400;
   color: #1a313e;
+}
+.noSubHeadingColor{
+  color: rgba(101, 9, 21, 0.7215686274509804) !important;
 }
 .leftDiv {
   /*background: url("images/pages/solutions/analytics/analytics-01.jpg");*/
@@ -394,7 +401,7 @@ li:hover i {
 .textToUppercase{
     text-transform: uppercase;
 }
-.cepheusAdvantage{
+/*.cepheusAdvantage{
     margin-top: 30px;
     padding-bottom: 50px;
     display: -webkit-box;
@@ -405,6 +412,21 @@ li:hover i {
         -ms-flex-direction: column;
             flex-direction: column;
     background: radial-gradient(circle, rgba(10,129,130,1) 0%, rgba(26,49,62,1) 100%);
+}*/
+.cepheusAdvantage {
+    margin-top: 30px;
+    padding-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+   /* background: radial-gradient(circle, rgba(10,129,130,1) 0%, #022853 100%);
+    background: rgb(26,57,74);*/
+    background: radial-gradient(circle, rgba(26,57,74,1) 0%, rgba(43,76,94,0.9864320728291317) 56%);
+    background-color: white;
 }
 .twoinarow{
   -webkit-box-pack: center;

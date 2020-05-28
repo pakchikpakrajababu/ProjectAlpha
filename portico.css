@@ -1019,11 +1019,17 @@ li:hover i {
 .card:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-.card .image{
+/*.card .image{
   font-weight: 400;
   color: #0a8182;
   font-size: 7em;
   text-align: center;
+}*/
+.card .image {
+    font-weight: 400;
+    color: rgba(28, 59, 76, 0.9411764705882353);
+    font-size: 7em;
+    text-align: center;
 }
 .team-image{
     background-image: url(images/guy.jpg);
