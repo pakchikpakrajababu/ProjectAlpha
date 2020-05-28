@@ -202,6 +202,13 @@ li:hover i {
           justify-content: center;
               line-height: 1.8em;
 }
+.our-story{
+  padding-top: 44px;
+}
+.team-heading-container{
+  padding-bottom: 30px;
+  padding-top: 15px;
+}
 
 .content p {
   margin-top: 15px;
