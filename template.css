@@ -125,12 +125,61 @@ li:hover i {
             background: radial-gradient(circle, rgba(26,57,74,1) 0%, rgba(43,76,94,0.9864320728291317) 56%);
         }
         .content-container {
-  font-family: cool;
-  font-size: 1.3em;
-  padding: 0 40px 10px 40px;
-  color: rgba(17, 132, 133, 0.84);
-  text-align: center;
-}
+          font-family: cool;
+          font-size: 1.2em;
+          padding: 40px 40px 10px 40px;
+          color: #1a313e;
+          text-align: center;
+        }
+        .content-container h2 {
+          position: relative;
+          display: inline;
+        }
+        .content-container h2::after{
+            border-bottom: 3px solid rgba(101, 9, 21, 0.7215686274509804);
+            content: "";
+            width: 40px;
+            top: 54px;
+            position: absolute;
+            left: 65px;
+            -webkit-transition: all 400ms;
+            transition: all 400ms;
+        }
+        .team, .advisor{
+              margin-bottom: 38px;
+        }
+        .team h2::after{
+            border-bottom: 3px solid rgba(101, 9, 21, 0.7215686274509804);
+            content: "";
+            width: 40px;
+            top: 54px;
+            position: absolute;
+            left: 63px;
+            -webkit-transition: all 400ms;
+            transition: all 400ms;
+        }
+        .advisor h2::after{
+            border-bottom: 3px solid rgba(101, 9, 21, 0.7215686274509804);
+            content: "";
+            width: 47px;
+            top: 54px;
+            position: ``;
+            left: 90px;
+            -webkit-transition: all 400ms;
+            transition: all 400ms;
+        }
+        .terms h2::after{
+            left: 110px;
+        }
+        .Disclaimer h2::after{
+            left: 72px;
+        }
+        .cookie h2::after{
+            left: 94px;
+        }
+        .transparency h2::after{
+            left: 220px;
+        }
 .content {
   font-family: cool;
   padding: 20px 40px 0px 42px;
@@ -151,6 +200,7 @@ li:hover i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+              line-height: 1.8em;
 }
 
 .content p {
@@ -354,6 +404,7 @@ li:hover i {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 40px 40px 15px 40px;
+  align-items: center;
 }
 .cctwoinarow{
   min-height: 230px;
@@ -453,8 +504,27 @@ li:hover i {
   -webkit-animation: 1s ease-out 0s 1 slideInFromLeft;
           animation: 1s ease-out 0s 1 slideInFromLeft;
 }
+.advisor-container .cctwoinarow {
+      max-width: 460px;
+  }
+  .advisor-container {
+      box-shadow: 1px 4px 14px #979797;
+      margin-bottom: 0;
+  }
+  .aboutusdesc{
+    margin-bottom: 0;
+  }
+  .legal-title{
+    padding-top: 90px;
+  }
 /* Loan Portfolio Section --- END */
 @media screen and (max-width: 960px) {
+  .aboutusdesc{
+    margin-bottom: 100px;
+  }
+  .content p {
+    margin-top: 30px;
+  }
   .top-backg{
     display: block;
     background-size: cover;
@@ -561,10 +631,17 @@ li:hover i {
     padding: 0px 30px 0px 30px;
     height: 250px;
   }
+  
 }
 @media screen and (min-width: 1080px) {
   .content p {
     width: 1080px;
     text-align: justify;
   }
+}
+@media screen and (max-width: 550px) {
+    .transparency h2::after {
+      left: 115px;
+      top: 115px;
+    }
 }
