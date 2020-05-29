@@ -651,6 +651,9 @@ li:hover i {
   .twoinarow{
     margin-bottom: 15px;
   }
+  .aboutusdesc .twoinarow{
+    min-height: 763px;
+  }
   .cepheusAdvantage{
     padding-bottom: 30px;
   }
