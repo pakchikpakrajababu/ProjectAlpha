@@ -594,9 +594,8 @@ li:hover i {
     min-height: 200px;
     margin-bottom: 15%;
   }
-  .team-section .cardHolder{
-    margin-bottom: 0;
-    padding-bottom: 50px;
+  .team-section {
+    min-height: 600px;
   }
   .contact-email {
     margin-top: 24px;
