@@ -1,22 +1,22 @@
-.container-blog{
+.container-caseStudy{
     padding-bottom:40px;
     padding-top: 40px;
     border-bottom: 1px solid rgb(199, 199, 199);
 }
-.blogFirst{
+.caseStudyFirst{
     padding-top: 40px
 }
 
-.blogHeading{
+.caseStudyHeading{
    border-bottom: 1px solid black;
 }
-.blogHeading h2 {
+.caseStudyHeading h2 {
     margin: unset;
 }
-.blogContent{
+.caseStudyContent{
     margin-top: 30px;
 }
-.bloggerDetails{
+.caseStudygerDetails{
    margin: 5px 0 0 0;
 }
 .btn-read-more, .btn-read-more.inverse:hover {
@@ -37,7 +37,7 @@
     border-color: inherit;
 }
 @media screen and (max-width: 960px) {
-    .one_third {
+    .two_third {
         margin: 0 0 40px 0;
     }
 }
