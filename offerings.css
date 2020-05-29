@@ -292,7 +292,9 @@ h6,
 	font-weight: normal;
 	text-transform: uppercase
 }
-
+.heading a {
+    color:#ffffff;
+}
 .heading.nospace {
 	margin: 0
 }
