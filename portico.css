@@ -1016,7 +1016,7 @@ li:hover i {
 .fix-width-team{
   width: 330px;
 }
-.aboutusdesc .card {
+#aboutus .card {
   min-height: 350px;
 }
 .card:hover {
