@@ -145,7 +145,11 @@ li:hover i {
             -webkit-transition: all 400ms;
             transition: all 400ms;
         }
-        .team, .advisor{
+        .team{
+              margin-bottom: 38px;
+              padding: 40px 40px 0px 40px;
+        }
+        .advisor{
               margin-bottom: 38px;
         }
         .team h2::after{
@@ -206,7 +210,7 @@ li:hover i {
   padding-top: 44px;
 }
 .team-heading-container{
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   padding-top: 15px;
 }
 
