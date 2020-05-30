@@ -69,15 +69,9 @@ li:hover i {
   padding: 72px 40px 0px 40px;
   text-align: center;
   background-attachment: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 160px;
 }
 .template_logo-container img {
@@ -86,12 +80,8 @@ li:hover i {
 
 .sepr {
   height: 1px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
           margin: 10px 0 8px 0;
 }
 .sepr div {
@@ -106,8 +96,7 @@ li:hover i {
   padding: 40px 40px 15px 40px;
   color: rgba(101, 9, 21, 0.7215686274509804);
   text-align: center;
-  -webkit-box-shadow: 0 -5px 6px -5px #a9a9a9;
-          box-shadow: 0 -5px 6px -5px #a9a9a9;
+  box-shadow: 0 -5px 6px -5px #a9a9a9;
         }
         
         .img-holder{
@@ -142,7 +131,6 @@ li:hover i {
             top: 54px;
             position: absolute;
             left: 65px;
-            -webkit-transition: all 400ms;
             transition: all 400ms;
         }
         .team{
@@ -159,7 +147,6 @@ li:hover i {
             top: 54px;
             position: absolute;
             left: 63px;
-            -webkit-transition: all 400ms;
             transition: all 400ms;
         }
         .advisor h2::after{
@@ -169,7 +156,6 @@ li:hover i {
             top: 54px;
             position: ``;
             left: 90px;
-            -webkit-transition: all 400ms;
             transition: all 400ms;
         }
         .terms h2::after{
@@ -190,20 +176,11 @@ li:hover i {
   font-size: 17px;
   letter-spacing: 0.5px;
   color: #1a313e;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   /* text-align: justify; */
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
               line-height: 1.8em;
 }
 .our-story{
@@ -225,19 +202,10 @@ li:hover i {
 }
 
 .contact-card-container {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
   align-items: flex-start;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
   padding-right: 30px;
-  -webkit-box-flex: 0;
-  -ms-flex: none;
   flex: none;
 }
 .circular_div {
@@ -267,8 +235,6 @@ li:hover i {
   margin-top: 20px;
 }
 .circle_div_container {
-  -webkit-box-flex: 0;
-  -ms-flex: 0;
   flex: 0;
   color: #1a313e;
   font-size: 1em;
@@ -299,37 +265,26 @@ li:hover i {
   /* background-position-x: -30px; */
   min-height: 100%;
   width: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 
 /* Loan Portfolio Section */
 
 .parentDiv {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 1080px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   font-family: cool;
   margin: 50px;
   min-height: 300px;
 }
 .leftDiv {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   /* box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); */
-  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 .rightDiv {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   margin-left: 50px;
   margin-right: 50px;
   display: flex;
@@ -357,12 +312,8 @@ li:hover i {
 }
 
 .section-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .innerHeading {
   margin-top: 20px;
@@ -379,8 +330,6 @@ li:hover i {
 .innerHeading ul li {
   margin: 10px;
   font-size: 15px;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
 
 }
@@ -389,10 +338,7 @@ li:hover i {
   color: #0a8182;
 }
 .inverse {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
   margin-top: 30px;
 }
 .inverse .rightDiv {
@@ -420,12 +366,7 @@ li:hover i {
 .cepheusAdvantage {
     margin-top: 30px;
     padding-bottom: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
    /* background: radial-gradient(circle, rgba(10,129,130,1) 0%, #022853 100%);
     background: rgb(26,57,74);*/
@@ -433,9 +374,7 @@ li:hover i {
     background-color: white;
 }
 .twoinarow{
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 40px 40px 15px 40px;
   align-items: center;
 }
@@ -564,9 +503,7 @@ li:hover i {
     background-attachment: fixed;
   }
   .contact-card-container {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
     min-height: 1px;
   }
   .address-container {
@@ -607,29 +544,19 @@ li:hover i {
     line-height: 21px;
   }
   .parentDiv {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     font-family: cool;
     margin: 0px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     min-height: 200px;
   }
   .rightDiv {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    flex: 1;
     margin: 50px 5px 50px 15px;
   }
   .leftDiv {
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 300px;

@@ -1,22 +1,22 @@
-.container-media{
+.container-news{
     padding-bottom:40px;
     padding-top: 40px;
     border-bottom: 1px solid rgb(199, 199, 199);
 }
-.mediaFirst{
+.newsFirst{
     padding-top: 40px
 }
 
-.mediaHeading{
+.newsHeading{
    border-bottom: 1px solid black;
 }
-.mediaHeading h2 {
+.newsHeading h2 {
     margin: unset;
 }
-.mediaContent{
+.newsContent{
     margin-top: 30px;
 }
-.mediagerDetails{
+.newsDetails{
    margin: 5px 0 0 0;
 }
 .btn-read-more, .btn-read-more.inverse:hover {
@@ -37,7 +37,7 @@
     border-color: inherit;
 }
 @media screen and (max-width: 960px) {
-    .two_third {
+    .one_third {
         margin: 0 0 40px 0;
     }
 }

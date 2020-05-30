@@ -11,7 +11,7 @@
 <link href="images/nav-header/chepheus-logo-only.svg" rel=icon type=image/x-icon>
 <link href="template.min.css" rel="stylesheet"/>
 <link href="offerings.min.css" rel="stylesheet"/>
-<link href="./caseStudies.min.css" rel="stylesheet"/>
+<link href="./news.min.css" rel="stylesheet"/>
 <link href="plugins/readMore/jquery.expandable.css" rel="stylesheet"/>
 
 <body data-ng-controller=portfolioController>
@@ -135,25 +135,27 @@
         <!--**************************Common Area with logo**************************-->
         <div class="contactusTitle img-holder">
             <div class="textToUppercase">
-                Case Study
+                News
             </div>
         </div>
 
-        <!--*********************** caseStudy item 1 *********************-->
-        <main class="hoc container-caseStudy clear caseStudyFirst" id="cs1">
+        <!--*********************** News Item 1 *********************-->
+        <main class="hoc container-news clear newsFirst" id="bi1">
             <article class="group">
-
-                <div class="two_third first">
-                    <div class="caseStudyHeading">
-                        <h2 class="heading noSubHeadingColor">Case Study 1</h2>
+                <div class="one_third first">
+                    <img src="images/pages/resources/news/news1.jpg" alt="Template Demo Image">
+                </div>
+                <div class="two_third">
+                    <div class="newsHeading">
+                        <h2 class="heading noSubHeadingColor">News 1</h2>
                     </div>
-                    <div class="caseStudygerDetails">
+                    <div class="newsDetails">
                         <ul class="nospace meta">
                             <li><i class="fas fa-pencil-alt"></i> James Phelps</li>
                             <li><span class="color-green">Jan 18, 2019</span></li>
                         </ul>
                     </div>
-                    <div class="caseStudyContent caseStudyBody">
+                    <div class="newsContent newsBody">
                         <p class="btmspace-30 example">Iaculis vehicula tristique ut gravida scelerisque mattis non erat
                             a
                             lectus
@@ -218,27 +220,27 @@
                             pulvinar
                             bibendum interdum donec a lacus diam cras sem ipsum finibus non volutpat nec… last</p>
                     </div>
-                </div>
-                <div class="one_third">
-                    <img src="images/pages/resources/caseStudy/caseStudy-01.jpg" alt="Template Demo Image">
                 </div>
             </article>
             <div class="clear"></div>
         </main>
-        <!--*********************** caseStudy item 2 *********************-->
-        <main class="hoc container-caseStudy clear" id="cs2">
+        <!--*********************** News Item 2 *********************-->
+        <main class="hoc container-news clear" id="bi2">
             <article class="group">
-                <div class="two_third first">
-                    <div class="caseStudyHeading">
-                        <h2 class="heading noSubHeadingColor">Case Study 2</h2>
+                <div class="one_third first">
+                    <img src="images/pages/resources/news/news2.jpg" alt="Template Demo Image">
+                </div>
+                <div class="two_third">
+                    <div class="newsHeading">
+                        <h2 class="heading noSubHeadingColor">News 2</h2>
                     </div>
-                    <div class="caseStudygerDetails">
+                    <div class="newsDetails">
                         <ul class="nospace meta">
                             <li><i class="fas fa-pencil-alt"></i> James Phelps</li>
                             <li><span class="color-green">Jan 18, 2019</span></li>
                         </ul>
                     </div>
-                    <div class="caseStudyContent caseStudyBody">
+                    <div class="newsContent newsBody">
                         <p class="btmspace-30 example">Iaculis vehicula tristique ut gravida scelerisque mattis non erat
                             a
                             lectus
@@ -303,27 +305,27 @@
                             pulvinar
                             bibendum interdum donec a lacus diam cras sem ipsum finibus non volutpat nec… last</p>
                     </div>
-                </div>
-                <div class="one_third">
-                    <img src="images/pages/resources/caseStudy/caseStudy-02.jpg" alt="Template Demo Image">
                 </div>
             </article>
             <div class="clear"></div>
         </main>
-        <!--*********************** caseStudy item 3 *********************-->
-        <main class="hoc container-caseStudy clear" id="cs3">
+        <!--*********************** News Item 3 *********************-->
+        <main class="hoc container-news clear" id="bi3">
             <article class="group">
-                <div class="two_third first">
-                    <div class="caseStudyHeading">
-                        <h2 class="heading noSubHeadingColor">Case Study 3</h2>
+                <div class="one_third first">
+                    <img src="images/pages/resources/news/news3.jpg" alt="Template Demo Image">
+                </div>
+                <div class="two_third">
+                    <div class="newsHeading">
+                        <h2 class="heading noSubHeadingColor">News 3</h2>
                     </div>
-                    <div class="caseStudygerDetails">
+                    <div class="newsDetails">
                         <ul class="nospace meta">
                             <li><i class="fas fa-pencil-alt"></i> James Phelps</li>
                             <li><span class="color-green">Jan 18, 2019</span></li>
                         </ul>
                     </div>
-                    <div class="caseStudyContent caseStudyBody">
+                    <div class="newsContent newsBody">
                         <p class="btmspace-30 example">Iaculis vehicula tristique ut gravida scelerisque mattis non erat
                             a
                             lectus
@@ -388,9 +390,6 @@
                             pulvinar
                             bibendum interdum donec a lacus diam cras sem ipsum finibus non volutpat nec… last</p>
                     </div>
-                </div>
-                <div class="one_third">
-                    <img src="images/pages/resources/caseStudy/caseStudy-03.jpg" alt="Template Demo Image">
                 </div>
             </article>
             <div class="clear"></div>
@@ -427,9 +426,10 @@
 <script src="jQuery-1.9.1.js"></script>
 <script src=files.js></script>
 <script src=plugins/readMore/jquery.expandable.js></script>
+
 <script>
 /* https://www.jqueryscript.net/animation/show-hide-content-expandable.html */
-    $(".caseStudyBody").expandable({
+    $(".newsBody").expandable({
         height: 210
     });
 
