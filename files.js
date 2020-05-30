@@ -41,8 +41,6 @@ portfolio.controller("portfolioController", [
 
 jQuery(function($) {
   $(window).on("load", function() {
-    console.log("inside the fade out function");
-    console.log($("#pageloaddiv"));
     $("#loader-div").addClass("loader-show");
   });
   
@@ -153,23 +151,6 @@ jQuery(function($) {
     /****************Slider -- End***************/
 });
 
-/********************* MAPS API - START **********************************/
-// window.onload = function() {
-//   L.mapquest.key = "s5m3mAVCtI7YCRAlwtVRSYewJdNPh9RY";
-
-//   var map = L.mapquest.map("map", {
-//     center: [19.00917, 73.011266],
-//     layers: L.mapquest.tileLayer("map"),
-//     dragging: false,
-//     zoom: 14
-//   });
-//   L.marker([19.00917, 73.011266], {
-//     icon: L.mapquest.icons.marker(),
-//     draggable: false,
-//     scrollWheelZoom: false
-//   }).addTo(map);
-// };
-/********************* MAPS API - END **********************************/
 $(window).resize(function() {
   if ($(window).width() < 960) {
     $(".fab-cont").slideDown("fast");
@@ -191,26 +172,19 @@ $(window).resize(function() {
 });
 
 window.addEventListener("resize", function() {
-    // Get screen size (inner/outerWidth, inner/outerHeight)
-
     if (window.innerHeight < window.innerWidth) {
       $(".header-sub").addClass("landscapeheight");
     } else {
       $(".header-sub").removeClass("landscapeheight");
     }
   }, false);
-// Function which adds the 'animated' class to any '.animatable' in view
 var doAnimations = function() {
-  // Calc current offset and get all animatables
   var offset = $(window).scrollTop() + $(window).height(),
     $animatables = $(".animatable");
-
-  // Unbind scroll handler if we have no animatables
   if ($animatables.length == 0) {
     $(window).off("scroll", doAnimations);
   }
 
-  // Check all animatables and animate them if necessary
   $animatables.each(function(i) {
     var $animatable = $(this);
     if ($animatable.offset().top + $animatable.height() - 20 < offset) {
@@ -218,8 +192,6 @@ var doAnimations = function() {
     }
   });
 };
-
-// Hook doAnimations on scroll, and trigger a scroll
 
 function isTouchDevice() {
   var prefixes = ["", "-webkit-", "-moz-", "-o-", "-ms-", ""];
