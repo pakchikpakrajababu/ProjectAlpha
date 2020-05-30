@@ -602,6 +602,9 @@
     -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
             box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   }
+  .chooseus{
+    min-height: 1443px;
+  }
   .chooseus .card {
     min-height: 322px;
     display: -webkit-box;
