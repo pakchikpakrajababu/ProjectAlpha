@@ -38,9 +38,9 @@ portfolio.controller("portfolioController", [
     };
   }
 ]);
-
-
-(function checkForJquery() {
+window.onload = (function () {
+  console.log("Window OIn Load Fired");
+})(function checkForJquery() {
   if (window.jQuery) {
     $(window).on("hashchange", function (e) {
       $("#loader-div").addClass("loader-show");
