@@ -735,4 +735,29 @@
     margin-top: 27px;
     margin-bottom: 27px;
   }
+  .copyrights a:after {
+    border-bottom: 1px solid black;
+    content: "";
+    width: 0px;
+    top: 23px;
+    position: absolute;
+    left: 0px;
+    -webkit-transition: all 400ms;
+    -o-transition: all 400ms;
+    transition: all 400ms;
+  }
+  .copyrights .firstLink:after {
+    border-bottom: 1px solid black;
+    content: "";
+    width: 0px;
+    top: 16px;
+    position: absolute;
+    left: 0px;
+    -webkit-transition: all 400ms;
+    -o-transition: all 400ms;
+    transition: all 400ms;
+  }
+  .copyrights .firstLink:hover:after {
+      width: 100%;
+    }
 }
