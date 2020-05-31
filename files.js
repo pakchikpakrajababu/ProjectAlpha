@@ -40,15 +40,8 @@ portfolio.controller("portfolioController", [
 ]);
 window.onload = function () {
   console.log('Loaded by winodw.load');
-};
-(function checkForJquery() {
-  if (window.jQuery) {
-    $(window).on("hashchange", function (e) {
-      $("#loader-div").addClass("loader-show");
-    });
-    console.log("LOADED");
+  if (checkForJquery()) {
     jQuery(function ($) {
-      $(window).on("load", function () {
         $("#loader-div").addClass("loader-show");
         /****************Slider -- Start***************/
         var siteCarousel = function () {
@@ -107,9 +100,7 @@ window.onload = function () {
           siteCarousel();
         }
         /****************Slider -- End***************/
-      });
 
-      $(document).ready(function () {
         $(window).on("scroll", doAnimations);
         $(window).trigger("scroll");
         $(this).scrollTop(0);
@@ -159,10 +150,8 @@ window.onload = function () {
           $("html, body").animate({ scrollTop: 0 }, 800);
           return false;
         });
-      });
       /*******SCROLL TO TOP -- END********/
     });
-
     $(window).resize(function () {
       if ($(window).width() < 960) {
         $(".fab-cont").slideDown("fast");
@@ -258,5 +247,12 @@ window.onload = function () {
     console.log("Checking if Jquery Loaded again");
     checkForJquery();
   }
-})();
+  
+};
+function checkForJquery() {
+  if (window.jQuery) {
+    return true;
+  } 
+  return false;
+}
 
