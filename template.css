@@ -629,7 +629,10 @@ li:hover i {
   .team-section {
     min-height: 1386px!important;
   }
-  
+  .team{
+        margin-bottom: 38px;
+        padding: 40px 40px 0px 40px;
+  }
   .contact-email {
     margin-top: 24px;
   }
