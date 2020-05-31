@@ -722,6 +722,18 @@ li:hover i {
   .origination-holder{
     min-height: 969px;
   }
+  .servicing-left{
+    min-height: 627px;
+  }
+  .analytics-container{
+    min-height: 992px;
+  }
+  .tech-container{
+    min-height: 1420px;
+  }
+  .erp-container{
+    min-height: 979px;
+  }
 }
 @media screen and (min-width: 1080px) {
   .content p {

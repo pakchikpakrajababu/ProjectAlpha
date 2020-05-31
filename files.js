@@ -40,7 +40,7 @@ portfolio.controller("portfolioController", [
 ]);
 
 jQuery(function($) {
-  $(window).on("load", function() {
+  $(document).ready(function() { 
     $("#loader-div").addClass("loader-show");
   });
   
