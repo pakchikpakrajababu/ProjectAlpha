@@ -38,9 +38,10 @@ portfolio.controller("portfolioController", [
     };
   }
 ]);
-window.onload = (function () {
-  console.log("Window OIn Load Fired");
-})(function checkForJquery() {
+window.onload = function () {
+  console.log('Loaded by winodw.load');
+};
+(function checkForJquery() {
   if (window.jQuery) {
     $(window).on("hashchange", function (e) {
       $("#loader-div").addClass("loader-show");
