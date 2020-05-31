@@ -575,6 +575,8 @@ li:hover i {
   .legal-title{
     padding-top: 90px;
   }
+  
+
 /* Loan Portfolio Section --- END */
 @media screen and (max-width: 960px) {
   .aboutusdesc{
@@ -703,6 +705,7 @@ li:hover i {
     padding: 0px 30px 0px 30px;
     height: 250px;
   }
+  
 
 }
 @media screen and (min-width: 1080px) {
@@ -716,17 +719,4 @@ li:hover i {
       left: 115px;
       top: 115px;
     }
-}
-.contactUs{
-    color: #1a313e;
-    font-size: 1.1em;
-}
-.textToCenter{
-    text-align:center;
-}
-.mapSection{
-    padding-bottom:101px;
-}
-.noMarginBottom{
-    margin-bottom: 0;
 }
