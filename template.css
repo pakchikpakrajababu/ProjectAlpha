@@ -149,7 +149,7 @@ li:hover i {
         }
         .team{
               margin-bottom: 38px;
-              padding: 40px 40px 0px 40px;
+              padding: 40px 40px 40px 40px;
         }
         .advisor{
               margin-bottom: 38px;
@@ -453,6 +453,9 @@ li:hover i {
       -ms-flex-align: center;
           align-items: center;
 }
+.advisor-holder {
+  padding: 40px 40px 70px 40px;
+}
 .cctwoinarow{
   min-height: 230px;
   max-width: 540px;
@@ -577,6 +580,7 @@ li:hover i {
   }
 /* Loan Portfolio Section --- END */
 @media screen and (max-width: 960px) {
+  
   .aboutusdesc{
     margin-bottom: 100px;
   }
@@ -687,6 +691,9 @@ li:hover i {
   }
   .twoinarow{
     margin-bottom: 15px;
+  }
+  .advisor-holder {
+    margin-bottom: 60px;
   }
   .cepheusAdvantage  .cctwoinarow {
     min-height: 320px;
