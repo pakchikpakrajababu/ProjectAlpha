@@ -39,7 +39,6 @@ portfolio.controller("portfolioController", [
   }
 ]);
 window.onload = function () {
-  console.log('Loaded by winodw.load');
   if (checkForJquery()) {
     jQuery(function ($) {
         $("#loader-div").addClass("loader-show");
@@ -244,7 +243,6 @@ window.onload = function () {
       });
     }
   } else {
-    console.log("Checking if Jquery Loaded again");
     checkForJquery();
   }
   
