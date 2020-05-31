@@ -42,6 +42,9 @@ portfolio.controller("portfolioController", [
 
 (function checkForJquery() {
   if (window.jQuery) {
+    $(window).on("hashchange", function (e) {
+      $("#loader-div").addClass("loader-show");
+    });
     console.log("LOADED");
     jQuery(function ($) {
       $(window).on("load", function () {
