@@ -574,6 +574,7 @@ li:hover i {
   }
   .aboutusdesc{
     margin-bottom: 40px;
+    min-height :unset;
   }
   .legal-title{
     padding-top: 90px;
@@ -608,8 +609,8 @@ li:hover i {
     overflow: scroll;
   }
   .aboutusdesc{
-    margin-bottom: 30px;
-    min-height :1024px;
+    margin-bottom: 50px;
+    min-height :unset;
   }
   .contact-mid {
     margin-left: 0;
@@ -725,10 +726,25 @@ li:hover i {
     width: 1080px;
     text-align: justify;
   }
+  
 }
 @media screen and (max-width: 550px) {
     .transparency h2::after {
       left: 115px;
       top: 115px;
+    }
+    .fix-width-team {
+      width: 100%;
+    }
+    
+}
+@media screen and (max-width: 1080px) {
+   .fix-width-team {
+    width: 265px;
+  }
+}
+@media screen and (max-width: 960px) {
+   .fix-width-team {
+      width: 330px;
     }
 }
