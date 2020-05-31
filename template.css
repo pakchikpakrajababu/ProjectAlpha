@@ -623,6 +623,9 @@ li:hover i {
     min-height: 200px;
     margin-bottom: 15%;
   }
+  .team-holder{
+    min-height: 1158px;
+  }
   .team-section {
     min-height: 1386px!important;
   }
