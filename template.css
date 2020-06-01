@@ -537,6 +537,7 @@
   }
   .cctwoinarow {
     max-width: unset;
+    width:100%;
   }
   #aboutus .twoinarow {
     min-height: 763px;
